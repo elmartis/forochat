@@ -19,7 +19,7 @@ const Formulario = () => {
     const {data, status} = await Chat().createforos(name, description)
     console.log('Data y status, ', data, status);
       if (status ==201) {
-        history.push("/products");
+        history.push("/Foros");
       } else {
         history.push("/Formulario");
       }

@@ -20,10 +20,10 @@ const Login = () => {
         const {data, status} = await User().login(name, password)
         console.log('Data y status, ', data, status);
         if (status ==200) {
-            history.push("/Team");
+            history.push("/Foros");
             setUser({...user, ...data})
           } else {
-            history.push("/Login");
+            history.push("/");
           }
     }
     return (

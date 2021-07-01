@@ -226,12 +226,13 @@ const classes = useStyles();
 
   return (
     <>
+   
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
-          
+          <p>{name}</p>
 
           <div className={classes.grow}>
         <Toolbar>

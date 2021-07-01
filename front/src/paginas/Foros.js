@@ -20,6 +20,7 @@ const Products = () => {
         } else {
           setForos({loading:false, data:[]})
         }
+        
   }
   React.useEffect(()=>{
     getForos()
@@ -38,7 +39,8 @@ const Products = () => {
                return(
                 <Paper elevation={10} margin className='style21'>
                     <div className='resultado'>
-                    <Button onClick={()=> history.push("/foros/".concat(value._id))}> <p>{value.name}</p></Button>
+                    <Button onClick={()=> history.push("/foros/".concat(value._id))}> <p>{value.name}
+                    </p></Button>
                         <p>{value.description} </p>
                       <div className='hora'>
                         <p>{value.date} </p>
